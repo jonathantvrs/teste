@@ -1,0 +1,16 @@
+{
+    "type": "postgres",
+    "host": "localhost",
+    "port": 5432,
+    "username": "pguser",
+    "password": "pgpassword",
+    "database": "teste",
+    "entities": ["dist/**/*.entity{.ts,.js}"],
+    "migrations": ["dist/api/database/migrations/*{.ts,.js}"],
+    "migrationsTableName": "migrations_typeorm",
+    "synchronize": false,
+    "migrationsRun": true,
+    "cli": {
+        "migrationsDir": "./src/api/database/migrations"
+    }
+}
